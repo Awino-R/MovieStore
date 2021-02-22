@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Movies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<script type="text/javascript" src="js/style.js"></script>
+</head>
+
+
+<body background="images/bg3.jfif">
+
+<!--Tabs-->
+
+<div class="tab">
+   <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search your movies.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <img src="images/logo.png" width="150px" height="100px">
+  
+  <button class="tablinks" onclick="openTab(event, 'UploadMovie')">Upload Movie</button>
+  <button class="tablinks" onclick="openTab(event, 'TVshows')">Tvshows</button>
+  <button class="tablinks" onclick="openTab(event, 'Movies')">Movies</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+</div>
+<br>
+<p> Offers: Buy 2 get 1 free.</p>
+
+<input type="button" onclick="window.location.href='public/UploadMovie.html';" value="UploadMovie" />
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Movie Name</th>
+    <th>Time</th>
+    <th>Lead Actor</th>
+    <th>Movie Poster</th>
+    <th>Genre</th>
+    <th>Rating</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>The Age of Adeline</td>
+    <td>1hr 55min</td>
+    <td>Blake Lively, Kathy Baker</td>
+    <td><img src="images/adaline1.jfif" width="10%"></td>
+    <td>Drama, Romance, Fantasy</td>
+    <td>PG</td>
+    <td><button class="btnEdit">Edit</button>
+      <button class="btnDelete">Delete</button></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Tyler Perry Sistas</td>
+    <td>Series</td>
+    <td>KJ Smith, Ebony, Von</td>
+    <td><img src="images/sistas.jpg" width="10%"></td>
+    <td>Drama, Romance</td>
+    <td>PG</td>
+    <td><button class="btnEdit">Edit</button>
+      <button class="btnDelete">Delete</button></td>
+  </tr>
+
+<div id="TVshows" class="tabcontent">
+  <h3>TvShows</h3>
+  <p>We have availed to our estimeed customers nothing but the best</p>
+  <ol>
+    <li>Friends</li>
+    <li>Real housewives of Atlanta</li>
+    <li>Neighbours</li>
+    <li>Hawaii Five0</li>
+  </ol>
+</div>
+
+<div id="Movies" class="tabcontent">
+  <h3>Movies</h3>
+  <p>Our timeless movies</p> 
+  <ol>
+    <li>No Man's land</li>
+    <li>Regrets</li>
+    <li>Addicted</li>
+    <li>A Cinderalla story</li>
+  </ol>
+</div>
+
+<div id="SignUp" class="tabcontent">
+  <h3>SignUp form</h3>
+  <p>Please join ou to receive timely updates</p>
+</div>
+
+
+
+
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html> 

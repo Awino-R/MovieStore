@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+body {font-family: Verdana, sans-serif;}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  position: relative;
+  width: 500px;
+  margin: 0;
+  left: 0;
+
+}
+
+/* Game of Thrones text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: darkred;
+}
+
+/* Fading animation */
+.mySlides  {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* Style the tab */
+.tab {
+
+  overflow: hidden;
+ 
+  background-color: lightbluesky;
+;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  margin-top: 10px;
+  color: floralwhite;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: springgreen;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: maroon;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  color:lightyellow;
+}
+.tab .search-container button:hover {
+  background: #ccc;
+}
+.tab .search-container button {
+  float: center;
+  padding: 8px 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #ddd;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.tab .search-container {
+  float: right;
+}
+
+.tab input[type=text] {
+  padding: 6px;
+  margin-top: 15px;
+  font-size: 17px;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 16px;
+  color: LightYellow;
+}
+ .btnEdit{
+  background-color: DodgerBlue;
+
+ }
+.btnDelete{
+  background-color: firebrick;
+
+ }
+
+
+/*upload.html css styling */
+
+/* Add styles to the form container */
+
+/* Full-width input fields */
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Full-width input fields */
+input[type=text], input[type=time] {
+  width: 100%;x;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: lightgray;
+
+}
+
+/* Adding background colours when the imputs get focus */
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: yellow;
+  outline: none;
+}
+.container{
+  padding: 50px;
+  background-color:LightYellow;
+}
+/* Modal Content/Box */
+.model{
+  background-color: yellow;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* Set a style for the submit button */
+.btnsubmit {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* Set a style for the reset button */
+.btnreset {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+
+}
+
+/* Set a style for the reset button */
+
+.btnhome {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  opacity: 0.9;
+  float: left;
+}
+ 
+ input[type=button] {
+  background-color: Blue;
+  font-size: 16px;
+  color:white;
+
+}
+ p{
+  font-size: 16px;
+ font-style: italic;
+ font-family: lucinda handwriting;
+ color:gold;
+ }

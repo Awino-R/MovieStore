@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
+</head>
+
+
+<body>
+<body background="../images/bg3.jfif">
+
+<!--Tabs-->
+
+<div class="tab">
+   <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search your movies.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <img src="../images/logo.png" width="150px" height="100px">
+  
+  <button class="tablinks" onclick="openTab(event, 'UploadMovie')">Upload Movie</button>
+  <button class="tablinks" onclick="openTab(event, 'TVshows')">Tvshows</button>
+  <button class="tablinks" onclick="openTab(event, 'Movies')">Movies</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+</div>
+<br>
+  
+     
+     <input type="button" onclick="window.location.href='../index.html';" value="Homepage" />
+    
+    <form class="model">
+    	    	<div class="container">
+    		<h1>Upload Movie</h1>
+    		<hr>
+    
+
+    <label for="moviename"><b>Movie Name</b></label>
+    <input type="text" placeholder="Movie Name" name="moviename" required>
+
+    <label for="duration"><b>Duration</b></label>
+    <input type="time" placeholder="Time in Hours" name="duration" required>
+    
+     <label for="rating"><b>Ratings</b></label>
+    <input type="text" placeholder="Ratings" name="duration" required>
+    
+    <label for="leadactor"><b>Lead Actor</b></label>
+    <input type="text" placeholder="Lead Actor" name="duration" required>
+   
+    <label for="poster"><b>Movie Poster</b></label>
+    <input type="text" placeholder="Movie Poster" name="duration" required>
+
+    <label for="Genre"><b>Genre</b></label>
+    <input type="text" placeholder="Genre" name="Genre" required>
+<hr>
+    <br>
+    <button type="submit" class="btnsubmit">Submit</button> 
+     <button type="reset" class="btnreset">Reset</button> 
+  
+  </form>
+</div>
+
+
+
+
+</body>
+</html>
